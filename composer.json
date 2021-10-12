@@ -12,10 +12,11 @@
     ],
     "require": {
         "php": ">=7.2",
-        "mirko-pagliai/me-cms": "dev-develop-ci-actions-no-database-backup as 2.30.3"
+        "mirko-pagliai/cakephp-entity-file-log": "^1.1"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer": "^4.0",
+        "mirko-pagliai/me-cms": "dev-develop-ci-actions-no-database-backup as 2.30.3",
         "phpunit/phpunit": "^8.5.12|^9.0|^9.5"
     },
     "autoload": {
