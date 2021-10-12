@@ -19,5 +19,18 @@
     </projectFiles>
 
     <issueHandlers>
+        <InvalidScope>
+            <errorLevel type="suppress">
+                <directory name="templates" />
+            </errorLevel>
+        </InvalidScope>
+
+        <UndefinedGlobalVariable>
+            <errorLevel type="suppress">
+                <directory name="templates" />
+            </errorLevel>
+        </UndefinedGlobalVariable>
+
+        <UndefinedConstant errorLevel="suppress" />
     </issueHandlers>
 </psalm>
