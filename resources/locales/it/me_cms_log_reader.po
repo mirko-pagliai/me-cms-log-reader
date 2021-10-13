@@ -1,0 +1,65 @@
+# LANGUAGE translation of me-cms-log-reader
+# Copyright Mirko Pagliai <mirko.pagliai@gmail.com>
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-10-13 17:18+0000\n"
+"PO-Revision-Date: 2021-10-13 19:19+0100\n"
+"Last-Translator: Mirko Pagliai <mirko.pagliai@gmail.com>\n"
+"Language-Team: Italian <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it\n"
+
+#: ./View/Helper/MenuHelper.php:60
+msgid "Log management"
+msgstr "Gestione log"
+
+#: ./Admin/Logs/index.php:29
+msgid "Size"
+msgstr "Dimensione"
+
+#: ./Admin/Logs/index.php:41
+msgid "Basic view"
+msgstr "Vista semplice"
+
+#: ./Admin/Logs/index.php:46
+msgid "Advanced view"
+msgstr "Vista avanzata"
+
+#: ./Admin/Logs/view.php:16
+#: ./Admin/Logs/view_as_serialized.php:16
+msgid "Log {0}"
+msgstr "Log {0}"
+
+#: ./Admin/Logs/view_as_serialized.php:51
+msgid "Request URL"
+msgstr "URL richiesta"
+
+#: ./Admin/Logs/view_as_serialized.php:62
+msgid "Referer URL"
+msgstr "URL referer"
+
+#: ./Admin/Logs/view_as_serialized.php:71
+msgid "Client IP"
+msgstr "IP client"
+
+#: ./Admin/Logs/view_as_serialized.php:79
+msgid "Map"
+msgstr "Mappa"
+
+#: ./Admin/Logs/view_as_serialized.php:93
+msgid "Exception attributes"
+msgstr "Attributi dell'eccezione"
+
+#: ./Admin/Logs/view_as_serialized.php:106
+msgid "Trace"
+msgstr "Trace"
+
+#: ./Admin/Logs/view_as_serialized.php:118
+msgid "Full log"
+msgstr "Log completo"
+
+

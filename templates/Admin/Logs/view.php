@@ -13,7 +13,7 @@ declare(strict_types=1);
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
 $this->extend('MeCms./Admin/common/view');
-$this->assign('title', __d('me_cms', 'Log {0}', $filename));
+$this->assign('title', __d('me_cms_log_reader', 'Log {0}', $filename));
 
 $this->append('actions', $this->Html->button(
     I18N_DOWNLOAD,

@@ -13,7 +13,7 @@ declare(strict_types=1);
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
 $this->extend('MeCms./Admin/common/view');
-$this->assign('title', __d('me_cms', 'Log {0}', $filename));
+$this->assign('title', __d('me_cms_log_reader', 'Log {0}', $filename));
 
 $this->append('actions', $this->Html->button(
     I18N_DOWNLOAD,
@@ -48,7 +48,7 @@ $this->append('actions', $this->Form->postButton(
             <div class="mb-1 text-muted">
                 <?php if (!empty($row->get('request'))) : ?>
                     <div class="small text-truncated">
-                        <?= __d('me_cms', 'Request URL') ?>:
+                        <?= __d('me_cms_log_reader', 'Request URL') ?>:
                         <?= $this->Html->link(
                             $row->get('request') === '/' ? '(Root)' : $row->get('request'),
                             $row->get('request'),
@@ -59,7 +59,7 @@ $this->append('actions', $this->Form->postButton(
 
                 <?php if (!empty($row->get('referer'))) : ?>
                     <div class="small text-truncated">
-                        <?= __d('me_cms', 'Referer URL') ?>:
+                        <?= __d('me_cms_log_reader', 'Referer URL') ?>:
                         <?= $this->Html->link($row->get('referer'), $row->get('referer'), ['target' => '_blank']) ?>
                     </div>
                 <?php endif; ?>
@@ -68,7 +68,7 @@ $this->append('actions', $this->Form->postButton(
                     <div>
                         <?= sprintf(
                             '%s: %s (%s | %s)',
-                            __d('me_cms', 'Client IP'),
+                            __d('me_cms_log_reader', 'Client IP'),
                             $row->get('ip'),
                             $this->Html->link(
                                 __d('me_cms', 'Who is'),
@@ -76,7 +76,7 @@ $this->append('actions', $this->Form->postButton(
                                 ['target' => '_blank']
                             ),
                             $this->Html->link(
-                                __d('me_cms', 'Map'),
+                                __d('me_cms_log_reader', 'Map'),
                                 str_replace('{IP}', $row->get('ip'), getConfigOrFail('security.ip_map')),
                                 ['target' => '_blank']
                             )
@@ -90,7 +90,7 @@ $this->append('actions', $this->Form->postButton(
         $buttons = $collapse = [];
 
         if (!empty($row->get('attributes'))) {
-            $buttons[] = $this->Html->button(__d('me_cms', 'Exception attributes'), "#log-attributes-{$k}", [
+            $buttons[] = $this->Html->button(__d('me_cms_log_reader', 'Exception attributes'), "#log-attributes-{$k}", [
                 'class' => 'btn-sm btn-primary',
                 'data-toggle' => 'collapse',
                 'data-target' => "#log-attributes-{$k}",
@@ -103,7 +103,7 @@ $this->append('actions', $this->Form->postButton(
         }
 
         if (!empty($row->get('trace'))) {
-            $buttons[] = $this->Html->button(__d('me_cms', 'Trace'), "#log-trace-{$k}", [
+            $buttons[] = $this->Html->button(__d('me_cms_log_reader', 'Trace'), "#log-trace-{$k}", [
                 'class' => 'btn-sm btn-primary',
                 'data-toggle' => 'collapse',
                 'data-target' => "#log-trace-{$k}",
@@ -115,7 +115,7 @@ $this->append('actions', $this->Form->postButton(
             );
         }
 
-        $buttons[] = $this->Html->button(__d('me_cms', 'Full log'), "#log-full-{$k}", [
+        $buttons[] = $this->Html->button(__d('me_cms_log_reader', 'Full log'), "#log-full-{$k}", [
             'class' => 'btn-sm btn-primary',
             'data-toggle' => 'collapse',
             'data-target' => "#log-full-{$k}",

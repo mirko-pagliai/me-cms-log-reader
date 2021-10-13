@@ -26,7 +26,7 @@ $this->append('actions', $this->Form->postButton(
     <thead>
         <tr>
             <th><?= I18N_FILENAME ?></th>
-            <th class="text-center"><?= __d('me_cms', 'Size') ?></th>
+            <th class="text-center"><?= __d('me_cms_log_reader', 'Size') ?></th>
         </tr>
     </thead>
     <tbody>
@@ -38,12 +38,12 @@ $this->append('actions', $this->Form->postButton(
                 </strong>
                 <?php
                 $actions = [
-                    $this->Html->link(__d('me_cms', 'Basic view'), ['action' => 'view', $log->get('filename')], ['icon' => 'eye']),
+                    $this->Html->link(__d('me_cms_log_reader', 'Basic view'), ['action' => 'view', $log->get('filename')], ['icon' => 'eye']),
                 ];
 
                 if ($log->get('hasSerialized')) {
                     $actions[] = $this->Html->link(
-                        __d('me_cms', 'Advanced view'),
+                        __d('me_cms_log_reader', 'Advanced view'),
                         ['action' => 'view', $log->get('filename'), '?' => ['as' => 'serialized']],
                         ['icon' => 'eye']
                     );
