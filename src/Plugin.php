@@ -16,10 +16,25 @@ declare(strict_types=1);
 namespace MeCms\LogReader;
 
 use Cake\Core\BasePlugin;
+use Cake\Core\PluginApplicationInterface;
+use MeCms\Plugin as MeCms;
 
 /**
  * Plugin class
  */
 class Plugin extends BasePlugin
 {
+    /**
+     * Load all the application configuration and bootstrap logic
+     * @param \Cake\Core\PluginApplicationInterface $app The host application
+     * @return void
+     */
+    public function bootstrap(PluginApplicationInterface $app): void
+    {
+        if (!$app->getPlugins()->has('MeCms')) {
+            $app->addPlugin(MeCms::class);
+        }
+
+        parent::bootstrap($app);
+    }
 }
