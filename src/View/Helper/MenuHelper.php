@@ -58,7 +58,7 @@ class MenuHelper extends Helper
             [
                 [
                     __d('me_cms_log_reader', 'Log management'),
-                    ['controller' => 'Logs', 'action' => 'index', 'plugin' => 'MeCms/LogReader', 'prefix' => ADMIN_PREFIX]
+                    ['controller' => 'Logs', 'action' => 'index', 'plugin' => 'MeCms/LogReader', 'prefix' => ADMIN_PREFIX],
                 ],
             ],
             __d('me_cms', 'Logs'),
